@@ -10,6 +10,6 @@ SOURCE_URL =		https://github.com/online-labs/image-app-wordpress
 ## Image tools  (https://github.com/online-labs/image-tools)
 all:	docker-rules.mk
 docker-rules.mk:
-	wget -qO - http://j.mp/image-tools | bash
+	wget -qO - https://raw.githubusercontent.com/scaleway/image-tools/master/builder/install.sh | bash
 -include docker-rules.mk
 ## Below you can add custom makefile commands and overrides
